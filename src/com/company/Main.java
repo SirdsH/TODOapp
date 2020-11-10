@@ -25,15 +25,23 @@ public class Main {
         }
         System.out.println("1) Manage tasks");
         System.out.println("2) Exit");
+        System.out.println("Choose option:");
         int select = 0;
         int mainmenu = 0;
         int taskmanagement = 0;
         mainmenu = sc.nextInt();
+        if (mainmenu == 2){
+            System.out.println("Thank you for using my application!!" + " See you soon!!!");
+        }
         if (mainmenu == 1){
             System.out.println("____--------_______------_______-------____");
             System.out.println("Task management:");
             System.out.println("----_______--------______-------_______----");
-            System.out.println("Create");
+            System.out.println("1) Create a new task");
+            System.out.println("2) Update a task");
+            System.out.println("3) Destroy a task");
+            System.out.println("4) Main menu");
+            System.out.println("Choose option:");
         }
     }
 }
