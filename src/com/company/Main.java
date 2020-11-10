@@ -26,7 +26,6 @@ public class Main {
         System.out.println("1) Manage tasks");
         System.out.println("2) Exit");
         System.out.println("Choose option:");
-        int select = 0;
         int mainmenu = 0;
         int taskmanagement = 0;
         mainmenu = sc.nextInt();
@@ -42,6 +41,13 @@ public class Main {
             System.out.println("3) Destroy a task");
             System.out.println("4) Main menu");
             System.out.println("Choose option:");
+            taskmanagement = sc.nextInt();
         }
+        if (taskmanagement == 1){
+            for (int i = 0; i < number.length; i++) {
+
+            }
+        }
+        else if (){}
     }
 }
