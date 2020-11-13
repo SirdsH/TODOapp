@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        String choice;
         System.out.println(" __          __  _                            _          _______ ____  _____   ____                      \n" +
                 " \\ \\        / / | |                          | |        |__   __/ __ \\|  __ \\ / __ \\                     \n" +
                 "  \\ \\  /\\  / /__| | ___ ___  _ __ ___   ___  | |_ ___      | | | |  | | |  | | |  | |   __ _ _ __  _ __  \n" +
@@ -32,22 +33,27 @@ public class Main {
         if (mainmenu == 2){
             System.out.println("Thank you for using my application!!" + " See you soon!!!");
         }
-        if (mainmenu == 1){
-            System.out.println("____--------_______------_______-------____");
-            System.out.println("Task management:");
-            System.out.println("----_______--------______-------_______----");
-            System.out.println("1) Create a new task");
-            System.out.println("2) Update a task");
-            System.out.println("3) Destroy a task");
-            System.out.println("4) Main menu");
+        if (mainmenu == sc.nextInt()){
+            System.out.println("Please chose right number:");
+            System.out.println("1) Manage tasks");
+            System.out.println("2) Exit");
             System.out.println("Choose option:");
-            taskmanagement = sc.nextInt();
+            mainmenu = sc.nextInt();
         }
-        if (taskmanagement == 1){
-            for (int i = 0; i < number.length; i++) {
-
+            if (mainmenu == 1) {
+                System.out.println("____--------_______------_______-------____");
+                System.out.println("Task management:");
+                System.out.println("----_______--------______-------_______----");
+                System.out.println("1) Create a new task");
+                System.out.println("2) Update a task");
+                System.out.println("3) Destroy a task");
+                System.out.println("4) Main menu");
+                System.out.println("Choose option:");
+                taskmanagement = sc.nextInt();
             }
+            if (taskmanagement == 1) {
+                System.out.println("Enter name of the new task:");
+                choice = sc.nextLine();
         }
-        else if (){}
     }
 }
