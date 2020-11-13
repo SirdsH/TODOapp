@@ -30,15 +30,16 @@ public class Main {
         int mainmenu = 0;
         int taskmanagement = 0;
         mainmenu = sc.nextInt();
-        if (mainmenu == 2){
-            System.out.println("Thank you for using my application!!" + " See you soon!!!");
-        }
-        if (mainmenu == sc.nextInt()){
+        for (int i = 0; i < mainmenu ; i++) {
             System.out.println("Please chose right number:");
             System.out.println("1) Manage tasks");
             System.out.println("2) Exit");
             System.out.println("Choose option:");
             mainmenu = sc.nextInt();
+            break;
+        }
+        if (mainmenu == 2){
+            System.out.println("Thank you for using my application!!" + " See you soon!!!");
         }
             if (mainmenu == 1) {
                 System.out.println("____--------_______------_______-------____");
