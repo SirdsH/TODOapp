@@ -30,7 +30,7 @@ public class Main {
         int mainmenu = 0;
         int taskmanagement = 0;
         mainmenu = sc.nextInt();
-        for (int i = 0; i < mainmenu ; i++) {
+        for (int i = 2; i < mainmenu ; i++) {
             System.out.println("Please chose right number:");
             System.out.println("1) Manage tasks");
             System.out.println("2) Exit");
@@ -55,6 +55,10 @@ public class Main {
             if (taskmanagement == 1) {
                 System.out.println("Enter name of the new task:");
                 choice = sc.nextLine();
+                for (int i = 0; i <number.length ; i++) {
+                    number[i] = number[i] + 1;
+                    System.out.println("You have "+number[i]+"/10!");
+                    break;}
         }
+            }
     }
-}
