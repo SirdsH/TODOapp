@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String choice;
+        String[] choice2= new String[10];
         System.out.println(" __          __  _                            _          _______ ____  _____   ____                      \n" +
                 " \\ \\        / / | |                          | |        |__   __/ __ \\|  __ \\ / __ \\                     \n" +
                 "  \\ \\  /\\  / /__| | ___ ___  _ __ ___   ___  | |_ ___      | | | |  | | |  | | |  | |   __ _ _ __  _ __  \n" +
@@ -41,7 +42,7 @@ public class Main {
         if (mainmenu == 2){
             System.out.println("Thank you for using my application!!" + " See you soon!!!");
         }
-            if (mainmenu == 1) {
+            while (mainmenu == 1) {
                 System.out.println("____--------_______------_______-------____");
                 System.out.println("Task management:");
                 System.out.println("----_______--------______-------_______----");
@@ -51,14 +52,19 @@ public class Main {
                 System.out.println("4) Main menu");
                 System.out.println("Choose option:");
                 taskmanagement = sc.nextInt();
+                if (taskmanagement == 1) {
+                    System.out.println("Enter name of the new task:");
+                    choice = sc.next();
+                    for (int i = 0; i <number.length ; i++) {
+                        number[i] = number[i] + 1;
+                        System.out.println("You can add up to 10 tasks!");
+                        System.out.println("You have "+number[i]+"/10 tasks!");
+                        break;
+                    }
+                }
             }
-            if (taskmanagement == 1) {
-                System.out.println("Enter name of the new task:");
-                choice = sc.nextLine();
-                for (int i = 0; i <number.length ; i++) {
-                    number[i] = number[i] + 1;
-                    System.out.println("You have "+number[i]+"/10!");
-                    break;}
-        }
-            }
+                }
+
     }
+
+
